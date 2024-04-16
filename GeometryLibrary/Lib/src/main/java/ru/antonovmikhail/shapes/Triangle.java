@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class Triangle implements Shape {
+    //предполагается что треугольник прямоугольный
     private final int a;
     private final int b;
 
