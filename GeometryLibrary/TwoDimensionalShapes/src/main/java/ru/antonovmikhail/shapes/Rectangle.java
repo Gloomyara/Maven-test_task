@@ -1,12 +1,6 @@
 package ru.antonovmikhail.shapes;
 
-import lombok.Data;
-
-@Data
-public class Rectangle implements Shape {
-    private final int a;
-    private final int b;
-
+public record Rectangle(int a, int b) implements Shape {
     @Override
     public int getShapePerimeter() {
         return 2 * a + 2 * b;
@@ -14,6 +8,6 @@ public class Rectangle implements Shape {
 
     @Override
     public int getShapeArea() {
-        return a*b;
+        return a * b;
     }
 }

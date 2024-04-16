@@ -1,11 +1,6 @@
 package ru.antonovmikhail.shapes;
 
-import lombok.Data;
-
-@Data
-public class Circle implements Shape {
-    private final int r;
-
+public record Circle(int r) implements Shape {
     @Override
     public int getShapePerimeter() {
         return (int) Math.round(2 * Math.PI * r);

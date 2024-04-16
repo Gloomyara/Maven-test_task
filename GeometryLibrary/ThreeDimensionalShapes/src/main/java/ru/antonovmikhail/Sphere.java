@@ -1,11 +1,6 @@
 package ru.antonovmikhail;
 
-import lombok.Data;
-
-@Data
-public class Sphere implements ThreeDimShape {
-
-    private final int r;
+public record Sphere(int r) implements ThreeDimShape {
 
     @Override
     public int getShapePerimeter() {
@@ -19,6 +14,6 @@ public class Sphere implements ThreeDimShape {
 
     @Override
     public int getShapeVolume() {
-        return (int) Math.round((4 * Math.PI * r * r * r)/3);
+        return (int) Math.round((4 * Math.PI * r * r * r) / 3);
     }
 }

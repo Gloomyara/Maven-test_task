@@ -1,11 +1,6 @@
 package ru.antonovmikhail;
 
-import lombok.Data;
-
-@Data
-public class Cube implements ThreeDimShape {
-
-    private final int a;
+public record Cube(int a) implements ThreeDimShape {
 
     @Override
     public int getShapePerimeter() {
