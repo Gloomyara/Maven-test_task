@@ -35,6 +35,14 @@ public class Main {
                 System.out.println("Что-то пошло не так");
             }
         }
+        ThreeDimShape cube = new Cube(5);
+        System.out.printf("Периметр 3д куба: %d;\n Площадь: %d; \n Обьем: %d \n",
+                cube.getShapePerimeter(), cube.getShapeArea(), cube.getShapeVolume());
+        ThreeDimShape sphere = new Sphere(5);
+        System.out.printf("Длина 3д окружности: %d;\n Площадь: %d; \n Обьем: %d \n",
+                sphere.getShapePerimeter(), sphere.getShapeArea(), sphere.getShapeVolume());
+        System.out.println("Площадь a больше площади б?:" + compareShapeArea(circle, sphere));
+        System.out.println("Площадь a больше площади б?:" + compareShapeArea(rectangle, cube));
     }
 
 }
