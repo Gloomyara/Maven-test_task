@@ -20,6 +20,7 @@ public class Main {
         System.out.printf("Периметр 2д треугольника: %d;\n Площадь: %d; \n",
                 triangle.getShapePerimeter(), triangle.getShapeArea());
         System.out.println("Площадь a больше площади б?:" + compareShapeArea(circle, rectangle));
+        System.out.println("\n Немного случайных фигур:");
         for (int i = 0; i < 5; i++) {
             Shape shape = getRandomShape();
             if (shape instanceof Circle) {
@@ -31,6 +32,12 @@ public class Main {
             } else if (shape instanceof Rectangle) {
                 System.out.printf("Периметр 2д прямоугольника: %d;\n Площадь: %d; \n",
                         shape.getShapePerimeter(), shape.getShapeArea());
+            } else if (shape instanceof Cube threeDimShape) {
+                System.out.printf("Периметр 3д куба: %d;\n Площадь: %d; \n Обьем: %d \n",
+                        threeDimShape.getShapePerimeter(), threeDimShape.getShapeArea(), threeDimShape.getShapeVolume());
+            } else if (shape instanceof Sphere threeDimShape) {
+                System.out.printf("Длина 3д окружности: %d;\n Площадь: %d; \n Обьем: %d \n",
+                        threeDimShape.getShapePerimeter(), threeDimShape.getShapeArea(), threeDimShape.getShapeVolume());
             } else {
                 System.out.println("Что-то пошло не так");
             }

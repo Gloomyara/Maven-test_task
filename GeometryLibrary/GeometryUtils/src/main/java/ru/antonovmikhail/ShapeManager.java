@@ -20,11 +20,13 @@ public class ShapeManager {
 
     public static Shape getRandomShape() {
         Random random = new Random();
-        int i = random.nextInt(3);
+        int i = random.nextInt(5);
         return switch (i) {
             case 0 -> new Circle(random.nextInt(1, 25));
             case 1 -> new Rectangle(random.nextInt(1, 25), random.nextInt(1, 25));
             case 2 -> new Triangle(random.nextInt(1, 25), random.nextInt(1, 25));
+            case 3 -> new Cube(random.nextInt(1, 25));
+            case 4 -> new Sphere(random.nextInt(1, 25));
             default -> null;
         };
     }

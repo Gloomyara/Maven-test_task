@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>GeometryUtils</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -23,6 +23,12 @@
             <groupId>ru.antonovmikhail</groupId>
             <artifactId>TwoDimensionalShapes</artifactId>
             <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>ru.antonovmikhail</groupId>
+            <artifactId>ThreeDimensionalShapes</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
